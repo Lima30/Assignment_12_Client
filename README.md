@@ -1,11 +1,11 @@
 # Getting Started with Create React App
-Website Name: Dream Hotel
-This is the top ranking 5 star hotel in key-west, FL. This hotel has an amaizing oceam view. 
-Live Link: (https://hotel-room-8049e.web.app/).
+Website Name: Meat Shop
+This is the top ranking Meat Shop in the town, MO. Better Quality with Better Price
+Live Link: (https://competent-colden-026c4b.netlify.app/).
 
-Some Points why you use my website:
+Some Important Points of my website:
+•	This website is for my Dad's small business.
 •	Easy access for everybody.
-•	People can have an idea of rooms in hotel.
-•	People will see different utilities available in hotels.
-•	People can easily see the room price and description. 
+•	People can have an idea of better quality chicken.
+•	People can easily see the product price and description. 
 •	Please can easily use their google or other ID for login.
