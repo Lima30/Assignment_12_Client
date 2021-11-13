@@ -44,11 +44,7 @@ const Review = () => {
                     <div className="event-box border border d-flex justify-content-center align-items-center">
                         <div className="login-form">
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                {/* <input
-                                    {...register("name")}
-                                    placeholder="Name"
-                                    className="p-2 m-2 w-100"
-                                /> */}
+
                                 <br />
                                 <input
                                     {...register("user", { required: true })}
@@ -65,26 +61,7 @@ const Review = () => {
                                 />
                                 <br />
 
-                                {/* <input
-                                    {...register("image", { required: true })}
-                                    placeholder="Image Link"
-                                    className="p-2 m-2"
-                                    className="p-2 m-2 w-100"
-                                />
-                                <br />
-                                <input
-                                    {...register("price", { required: true })}
-                                    placeholder="Price"
-                                    type="number"
-                                    className="p-2 m-2"
-                                    className="p-2 m-2 w-100"
-                                />
-                                <br />
-                                <select {...register("model")} className="p-2 m-2 w-100">
-                                    <option value="premium">premium</option>
-                                    <option value="classic">classic</option>
-                                    <option value="business">business</option>
-                                </select> */}
+
                                 <br />
 
                                 {errors.exampleRequired && <span>This field is required</span>}

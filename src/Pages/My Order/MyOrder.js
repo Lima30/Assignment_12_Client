@@ -70,4 +70,3 @@ const MyOrder = () => {
 export default MyOrder;
 
 
-// https://rocky-river-51306.herokuapp.com/myOrders/mahfuz2427@gmail.com

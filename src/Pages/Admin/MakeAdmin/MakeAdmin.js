@@ -9,7 +9,7 @@ import { Button, TextField, Alert } from '@mui/material';
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
     const [success, setSuccess] = useState(false);
-    // const { token } = useAuth();
+
 
     const handleOnBlur = e => {
         setEmail(e.target.value);
@@ -19,7 +19,7 @@ const MakeAdmin = () => {
         fetch('https://rocky-river-51306.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
-                // 'authorization': `Bearer ${token}`,
+
                 'content-type': 'application/json'
             },
             body: JSON.stringify(user)

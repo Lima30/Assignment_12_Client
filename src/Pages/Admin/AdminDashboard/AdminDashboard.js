@@ -47,40 +47,6 @@ const AdminDashboard = () => {
                                     </li>
 
 
-
-
-                                    {/* <li
-                                        onClick={() => setControl("addServices")}
-                                        className="admin-menu p-2"
-                                    >
-                                        Add Services
-                                    </li>
-
-                                    <li
-                                        onClick={() => setControl("services")}
-                                        className="admin-menu p-2"
-                                    >
-                                        Manage Services
-                                    </li>
-                                    <li
-                                        onClick={() => setControl("ManageOrder4")}
-                                        className="admin-menu p-2"
-                                    >
-                                        Manage Orders
-                                    </li>
-                                    <li
-                                        onClick={() => setControl("status")}
-                                        className="admin-menu p-2"
-                                    >
-                                        Orders Status
-                                    </li>
-
-                                    <li
-                                        onClick={() => setControl("makeadmin")}
-                                        className="admin-menu p-2"
-                                    >
-                                        Make Admin
-                                    </li> */}
                                     {
                                         admin && <Box>
 

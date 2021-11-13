@@ -36,13 +36,8 @@ const AddServices = () => {
                                     className="p-2 m-2 w-100"
                                 />
                                 <br />
-                                <input
-                                    {...register("date")}
-                                    // placeholder="Name"
-                                    type="date"
-                                    className="p-2 m-2 w-100"
-                                />
-                                <br />
+
+
                                 <input
                                     {...register("description")}
                                     placeholder="Description"
@@ -65,13 +60,7 @@ const AddServices = () => {
                                     className="p-2 m-2"
                                     className="p-2 m-2 w-100"
                                 />
-                                <br />
-                                <select {...register("model")} className="p-2 m-2 w-100">
-                                    <option value="premium">premium</option>
-                                    <option value="classic">classic</option>
-                                    <option value="business">business</option>
-                                </select>
-                                <br />
+
 
                                 {errors.exampleRequired && <span>This field is required</span>}
 
