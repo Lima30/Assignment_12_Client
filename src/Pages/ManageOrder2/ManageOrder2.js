@@ -38,7 +38,7 @@ const ManageOrder2 = () => {
                             <th>Room Name</th>
 
                             <th>Image Link</th>
-                            <th>Status</th>
+                            {/* <th>Status</th> */}
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -49,7 +49,7 @@ const ManageOrder2 = () => {
                                 <td>{pd.name}</td>
 
                                 <td>{pd.picture}</td>
-                                <td>{pd.status}</td>
+                                {/* <td>{pd.status}</td> */}
                                 <button onClick={() => handleDelete(pd?._id)} className="btn bg-danger p-2">Delete</button>
                             </tr>
                         </tbody>

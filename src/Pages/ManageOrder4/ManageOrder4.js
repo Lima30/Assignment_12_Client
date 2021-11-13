@@ -53,7 +53,7 @@ const ManageOrder4 = () => {
                                     defaultValue={pd.status}
                                 />
                             </td>
-                            <button className="btn bg-danger p-2">Delete</button>
+                            {/* <button className="btn bg-danger p-2">Delete</button> */}
                             <button
                                 onClick={() => handleUpdate(pd._id)}
                                 className="btn bg-success p-2"

@@ -69,12 +69,12 @@ const AdminDashboard = () => {
                                             >
                                                 Manage Prodcuts Status
                                             </li>
-                                            <li
+                                            {/* <li
                                                 onClick={() => setControl("status")}
                                                 className="admin-menu p-2"
                                             >
                                                 Orders Status (not working)
-                                            </li>
+                                            </li> */}
 
                                             <li
                                                 onClick={() => setControl("makeadmin")}
@@ -118,3 +118,8 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
+
+
+
+
