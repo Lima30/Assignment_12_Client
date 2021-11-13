@@ -52,7 +52,7 @@ const Booking = () => {
         <div>
             <h2>Details of: {service.name}</h2>
             <h2>Price: ${service.price}</h2>
-            <img src={service.picture} alt="" />
+            <img className="img-fluid" src={service.picture} alt="" />
 
             {/* <h2>this is booking: {serviceId}</h2>
             <br />

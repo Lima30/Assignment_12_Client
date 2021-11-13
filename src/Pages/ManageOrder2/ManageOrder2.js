@@ -30,7 +30,7 @@ const ManageOrder2 = () => {
     return (
         <div>
             <div className="container">
-                <h1>Manage Services </h1>
+                <h1>Manage All Products </h1>
                 <Table striped bordered hover>
                     <thead>
                         <tr>

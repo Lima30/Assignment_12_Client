@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../../Footer/Footer';
-import Founder from '../../Founder/Founder';
+import Review from '../../Review/Review';
+import ReviewShow from '../../ReviewShow/ReviewShow';
+
 import Banner from '../Banner/Banner';
 import Distance from '../Distance/Distance';
 
@@ -21,10 +23,9 @@ const Home = () => {
             <Distance></Distance>
             <br />
             <br />
-            <Founder></Founder>
-            <br />
-            <br />
 
+
+            <ReviewShow></ReviewShow>
         </div>
     );
 };

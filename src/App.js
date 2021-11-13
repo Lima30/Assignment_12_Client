@@ -13,7 +13,7 @@ import AddService from './Pages/AddServices/AddServices';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Pages/Footer/Footer';
 // import Expert from './Pages/Home/Expert/Expert';
-import Aminities from './Pages/Amenities/Aminities';
+// import Aminities from './Pages/Amenities/Aminities';
 import MyOrder from './Pages/My Order/MyOrder';
 // import ManageOrder from './Pages/manageOrder/manageOrder';
 import ManageOrder2 from './Pages/ManageOrder2/ManageOrder2';
@@ -49,9 +49,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <Route path="/amenities">
+            {/* <Route path="/amenities">
               <Aminities></Aminities>
-            </Route>
+            </Route> */}
             <Route path="/explore">
               <Explore></Explore>
             </Route>

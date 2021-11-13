@@ -8,7 +8,7 @@ const Header = () => {
     const { user, logout } = useAuth();
     return (
         <>
-            <Navbar bg="secondary" variant="light" sticky="top" collapseOnSelect expand="lg" >
+            <Navbar bg="info" variant="light" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
                     <Navbar.Brand href="#home"> Meat Shop</Navbar.Brand>
                     <Navbar.Toggle />

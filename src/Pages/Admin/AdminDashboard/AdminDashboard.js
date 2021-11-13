@@ -8,6 +8,7 @@ import MyOrder from '../../My Order/MyOrder';
 import Payment from '../../Payment/Payment';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import Box from '@mui/material/Box';
+import Review from '../../Review/Review';
 
 const AdminDashboard = () => {
     const [control, setControl] = useState("");
@@ -87,20 +88,20 @@ const AdminDashboard = () => {
                                                 onClick={() => setControl("addServices")}
                                                 className="admin-menu p-2"
                                             >
-                                                Add Services
+                                                Add A Products
                                             </li>
 
                                             <li
                                                 onClick={() => setControl("services")}
                                                 className="admin-menu p-2"
                                             >
-                                                Manage Services
+                                                Manage All Products
                                             </li>
                                             <li
                                                 onClick={() => setControl("ManageOrder4")}
                                                 className="admin-menu p-2"
                                             >
-                                                Order Status
+                                                Manage Prodcuts Status
                                             </li>
                                             <li
                                                 onClick={() => setControl("status")}
@@ -125,6 +126,8 @@ const AdminDashboard = () => {
                         </div>
                         <div className="col-md-9 text-center  text-center">
                             {/* <h1>render your components</h1> */}
+                            {control === "review" && <Review></Review>}
+
 
                             {control === "payment" && <Payment></Payment>}
                             {control === "myOrder" && <MyOrder></MyOrder>}

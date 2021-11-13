@@ -1,8 +1,22 @@
+// import React from 'react';
+
+// const Review = () => {
+//     return (
+//         <div>
+//             <h2>This is Review</h2>
+//         </div>
+//     );
+// };
+
+// export default Review;
+
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useFirebase from '../../hooks/useFirebase';
+// import useFirebase from '../../hooks/useFirebase';
 
-const AddServices = () => {
+const Review = () => {
     const { user } = useFirebase();
 
     const {
@@ -13,7 +27,7 @@ const AddServices = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch("https://rocky-river-51306.herokuapp.com/addServices", {
+        fetch("http://localhost:5000/addReview", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -25,21 +39,21 @@ const AddServices = () => {
     return (
         <div>
             <div>
-                <h1 className="mt-5 text-center text-info">Please Add A Products</h1>
+                <h1 className="mt-5 text-center text-info">Please Add Review</h1>
                 <div className="login-box w-25 m-auto mt-5">
                     <div className="event-box border border d-flex justify-content-center align-items-center">
                         <div className="login-form">
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input
+                                {/* <input
                                     {...register("name")}
                                     placeholder="Name"
                                     className="p-2 m-2 w-100"
-                                />
+                                /> */}
                                 <br />
                                 <input
-                                    {...register("date")}
-                                    // placeholder="Name"
-                                    type="date"
+                                    {...register("user", { required: true })}
+                                    defaultValue={user?.displayName}
+                                    className="p-2 m-2"
                                     className="p-2 m-2 w-100"
                                 />
                                 <br />
@@ -51,7 +65,7 @@ const AddServices = () => {
                                 />
                                 <br />
 
-                                <input
+                                {/* <input
                                     {...register("image", { required: true })}
                                     placeholder="Image Link"
                                     className="p-2 m-2"
@@ -70,7 +84,7 @@ const AddServices = () => {
                                     <option value="premium">premium</option>
                                     <option value="classic">classic</option>
                                     <option value="business">business</option>
-                                </select>
+                                </select> */}
                                 <br />
 
                                 {errors.exampleRequired && <span>This field is required</span>}
@@ -89,4 +103,4 @@ const AddServices = () => {
     );
 };
 
-export default AddServices;
+export default Review;
