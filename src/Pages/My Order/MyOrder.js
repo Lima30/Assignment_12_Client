@@ -46,7 +46,7 @@ const MyOrder = () => {
                                 <h6>{pd?.name}</h6>
                                 {/* <h4>{pd?.model}</h4> */}
                                 {/* <p>{pd?.description}</p> */}
-                                <h3 className="text-danger"> Cost :${pd?.price}</h3>
+                                <h3 className="text-black"> Cost :${pd?.price}</h3>
 
                                 <button
                                     onClick={() => handleDelete(pd?._id)}
